@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+        
+        .disclaimer {
+            display: none;
+        }
+} 
+
+h2, h3, h4, h5, a, ul, ol, li, p, a{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-decoration: none;
+}

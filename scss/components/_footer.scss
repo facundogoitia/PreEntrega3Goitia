@@ -1,0 +1,86 @@
+@import '../base/maps.scss';
+
+.main-footer {
+    display: map-get($flexbox, dspl);
+    justify-content: map-get($flexbox, contentaround);
+    background-color: rgb(38, 38, 46);
+    font-family: 'Montserrat', serif;
+    color: #fff;
+    bottom: 0;
+
+    @media screen and (max-width: 750px) {
+        flex-direction: map-get($flexbox, directioncolumn);
+        align-items: map-get($flexbox, algitems);
+    }
+
+        .contact {
+            display: map-get($flexbox, dspl);
+            flex-direction: map-get($flexbox, directioncolumn);
+            justify-content: map-get($flexbox, contentevenly);
+            height: 13rem;
+        }
+        
+            .logo-footer {
+                display: map-get($flexbox, dspl);
+                flex-direction: map-get($flexbox, directioncolumn);
+                justify-content: map-get($flexbox, contentend);
+                align-items: center;
+            }
+        
+                .contact-container {
+                    display: map-get($flexbox, dspl);
+                    flex-direction: map-get($flexbox, directioncolumn);
+                    justify-content: map-get($flexbox, contentevenly);
+                    align-items: map-get($flexbox, algitems);
+
+                    @media screen and (max-width: 750px) {
+                        margin-bottom: 1em;
+                    }
+                }
+
+                    .footer-tittle, .p-footer {
+                        text-align: center;
+                    }
+            
+                        .social-btns__footer {
+                            display: map-get($flexbox, dspl);
+                            width: 50%;
+                            justify-content: map-get($flexbox, contentevenly);
+                        }
+            
+                            .social-button--instagram {
+                                color: #fff;
+                                font-size: 1.3em; 
+
+                                &:hover {
+                                    color: #C13584;
+                                }
+                            }
+
+                                .social-button--linkedin {
+                                    color: #fff;
+                                    font-size: 1.3em;
+
+                                    &:hover {
+                                        color: rgb(10 102 194);
+                                    }
+                                }
+                            
+                                    .social-button--twitter {
+                                        color: #fff;
+                                        font-size: 1.3em;
+                                        
+                                        &:hover {
+                                            color: #1d9bf0;
+                                        }
+                                    }
+                            
+                                        .social-button--twitch {
+                                            color: #fff;
+                                            font-size: 1.3em;
+                                            
+                                            &:hover {
+                                                color: #a970ff;
+                                            }
+                                        }
+}
